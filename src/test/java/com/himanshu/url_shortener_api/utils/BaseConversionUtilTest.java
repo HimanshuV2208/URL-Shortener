@@ -57,4 +57,10 @@ class BaseConversionUtilTest {
         } catch (InvalidPropertiesFormatException ignored) {}
         assertEquals(352, actual);
     }
+
+    @Test
+    void test_b62EncodedStringToId_maxValuePlus1() {
+        Exception exception = assertThrows(InvalidPropertiesFormatException.class, () -> BaseConversionUtil.B62EncodedStringToId("sclqgMAPqi3"));
+        assertEquals("String is too long", exception.getMessage());
+    }
 }
