@@ -4,12 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 public class UrlLongRequestDTO {
     private String longUrl;
-    private Date expiryDate;
+    private LocalDateTime expiryDate;
 }

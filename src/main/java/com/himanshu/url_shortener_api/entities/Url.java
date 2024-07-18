@@ -11,7 +11,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -26,6 +26,6 @@ public class Url {
     @Column(nullable = false)
     private String longUrl;
     @Column(nullable = false)
-    private Date createdDate;
-    private Date expiryDate;
+    private LocalDateTime createdDate;
+    private LocalDateTime expiryDate;
 }
