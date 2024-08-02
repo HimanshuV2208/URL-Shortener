@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class ScheduledTaskService {
 
-    private static final long CLEANUP_FREQUENCY = 120000; // in millis -> 2 minutes
+    private static final long CLEANUP_FREQUENCY = 6000000; // in millis -> 10 minutes
     private static final Logger logger = LoggerFactory.getLogger(ScheduledTaskService.class);
 
     @Autowired
