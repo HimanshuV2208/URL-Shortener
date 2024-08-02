@@ -23,7 +23,7 @@ public class Url {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(nullable = false)
+    @Column(nullable = false, length = 2000)
     private String longUrl;
     @Column(nullable = false)
     private LocalDateTime createdDate;
